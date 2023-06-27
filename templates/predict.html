@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Big Mart Sales Prediction</title>
+</head>
+<body>
+    <h1>Big Mart Sales Prediction</h1>
+    <h3>Welcome, {{ session['username'] }}</h3>
+
+    <form action="/predict" method="POST">
+        
+        <label for="Item_Identifier">Item_Identifier:</label>
+        <input type="text" id="Item_Identifier" name="Item_Identifier"><br><br>
+
+        <label for="Item_Weight">Item_Weight:</label>
+        <input type="text" id="Item_Weight" name="Item_Weight"><br><br>
+
+        <label for="Item_Visibility">Item_Visibility:</label>
+        <input type="text" id="Item_Visibility" name="Item_Visibility"><br><br>
+
+        <label for="Item_Type">Item_Type:</label>
+        <input type="text" id="Item_Type" name="Item_Type"><br><br>
+
+        <label for="Item_MRP">Item_MRP:</label>
+        <input type="text" id="Item_MRP" name="Item_MRP"><br><br>
+
+        <label for="Outlet_Identifier">Outlet_Identifier:</label>
+        <input type="text" id="Outlet_Identifier" name="Outlet_Identifier"><br><br>
+
+        <label for="Outlet_Establishment_Year">Outlet_Establishment_Year:</label>
+        <input type="text" id="Outlet_Establishment_Year" name="Outlet_Establishment_Year"><br><br>
+
+        <label for="Item_Fat_Content">Item_Fat_Content:</label>
+        <input type="text" id="Item_Fat_Content" name="Item_Fat_Content"><br><br>
+
+        <label for="Outlet_Size">Outlet_Size:</label>
+        <input type="text" id="Outlet_Size" name="Outlet_Size"><br><br>
+
+        <label for="Outlet_Location_Type">Outlet_Location_Type:</label>
+        <input type="text" id="Outlet_Location_Type" name="Outlet_Location_Type"><br><br>
+
+        <label for="Outlet_Type">Outlet_Type:</label>
+        <input type="text" id="Outlet_Type" name="Outlet_Type"><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    <br>
+    <a href="/logout">Logout</a>
+</body>
+</html>
